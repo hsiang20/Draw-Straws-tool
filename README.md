@@ -1,4 +1,3 @@
 # Schedule Arranger
-[TOC]
 
 ## Introduction
