@@ -1,8 +1,8 @@
 # Schedule Arranger
 
 ## Introduction
-The project is for tabletennis school team of National Taiwan University. 
-It can help arranging the schedules of the contests, giving the data of the players
+The project is for tabletennis school team of National Taiwan University.\n
+It can help arranging the schedules of the contests, giving the data of the players.\n
 
 ## Usage
 '''
