@@ -1,4 +1,4 @@
-# Schedule Arranger
+# Draw-Straws Tool
 
 ## Introduction
 The project is for tabletennis school team of National Taiwan University.  
