@@ -5,8 +5,10 @@ Example:
 電機一,張伯倫
 土木二,錢德勒,Yes
 光電碩一,李嘉圖
-......
-
+生傳三,吳郭魚
+高分子碩二,胡迪
+醫學六,羅斯福,Yes
+園藝一,高斯
 '''
 
 def file_reader(filename, PLAYERS_IN_ONE_GROUP, PLAYERS_IN_ONE_GROUP_OTHERWISE):

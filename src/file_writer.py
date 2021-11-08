@@ -1,12 +1,18 @@
 '''
 Output file format (.txt):
-Example:
-第 1 組： 
-電機一,張伯倫
-土木二,錢德勒,Yes
+Example
+參賽選手 7 人，共 2 組
+
+第 1 組：
+醫學六,羅斯福,Yes
 光電碩一,李嘉圖
+生傳三,吳郭魚
+
 第 2 組：
-......
+土木二,錢德勒,Yes
+電機一,張伯倫
+高分子碩二,胡迪
+園藝一,高斯
 '''
 
 def file_writer(filename, result):
