@@ -1,1 +1,4 @@
-# schedule_arranger
+# Schedule Arranger
+[TOC]
+
+## Introduction
