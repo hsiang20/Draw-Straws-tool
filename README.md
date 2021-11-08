@@ -41,7 +41,7 @@ If the player is TTST, the third column should be Yes (or any other string).
 * TTST: If True, the players of the tabletennis school team would be seperated to different groups. Default True.
 * PLAYERS_IN_ONE_GROUP: The number of players in one group. Default 3.
 * PLAYERS_IN_ONE_GROUP_OTHERWISE: If the remainder is not 0, the number of the remain players in one group. Default 4.
-> The difference of these two variables must be 1.  
+> *The difference of these two variables must be 1.*  
 > For example,   
 > If number of players is 32,   
 > PLAYERS_IN_ONE_GROUP = 3  
