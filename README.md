@@ -1,4 +1,4 @@
-# Draw-Straws Tool (Random picker)
+# Draw-Straws Tool (Random Picker)
 
 ## Introduction
 The project is for tabletennis school team of National Taiwan University.  
