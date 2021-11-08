@@ -2,7 +2,7 @@
 
 ## Introduction
 The project is for tabletennis school team of National Taiwan University.  
-It can help arranging the schedules of the contests, giving the data of the players.\n
+It can help arranging the schedules of the contests, giving the data of the players.
 
 ## Usage
     $ python src/main.py [INPUTFILE_NAME] [OUTPUTFILE_NAME]  
