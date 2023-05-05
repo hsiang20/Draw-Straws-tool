@@ -3,7 +3,7 @@ import sys
 from file_reader import file_reader
 from file_writer import file_writer
 from arranger import Arranger
-
+import argparse
 '''
 Variables:
 1. DEPARTMENT
@@ -22,19 +22,29 @@ Variables:
     containing 4 players.
 
 '''
+parser = argparse.ArgumentParser()
+parser.add_argument("inputfile")
+parser.add_argument("outputfile")
+parser.add_argument("-d", "--department", help="When True, players in the same department will not be arranged to the same group.", default=True)
+parser.add_argument("-t", "--ttst", help="When True, the memebers of TTST will not be arranged to the same group.", default=True)
+parser.add_argument("-p", "--players_per_group", help="Players per group", default=3)
+parser.add_argument("-o", "--players_per_group_other", help="Players per group (if remained)", default=4)
+args = parser.parse_args()
 
-DEPARTMENT = True
-TTST = True
-PLAYERS_IN_ONE_GROUP = 3
-PLAYERS_IN_ONE_GROUP_OTHERWISE = 4
+DEPARTMENT = args.department
+TTST = args.ttst
+PLAYERS_IN_ONE_GROUP = args.players_per_group
+PLAYERS_IN_ONE_GROUP_OTHERWISE = args.players_per_group_other
 
 
 if __name__ == "__main__":
+    '''
     if len(sys.argv) < 3:
         print("Usage: \npython main.py [INPUTFILE] [OUTPUTFILE_NAME]")
         sys.exit()
+    '''
 
-    filename = sys.argv[1]
+    filename = args.inputfile
     if filename[-3:] != "csv":
         print("ERROR: Input file must be .csv file.")
         sys.exit()
@@ -42,7 +52,7 @@ if __name__ == "__main__":
     assert abs(PLAYERS_IN_ONE_GROUP - PLAYERS_IN_ONE_GROUP_OTHERWISE) == 1, ""\
         "Difference of PLAYERS_IN_ONE_GROUP and PLAYERS_IN_ONE_GROUP_OTHERWISE "\
         "should be 1."
-
+    
     data, group_num_normal, group_num_abnormal = file_reader(filename, 
                                                              PLAYERS_IN_ONE_GROUP, 
                                                              PLAYERS_IN_ONE_GROUP_OTHERWISE)
@@ -61,7 +71,7 @@ if __name__ == "__main__":
                         TTST=TTST)
 
     result = Arranger.get_result()
-    filename_out = sys.argv[2]
+    filename_out = args.outputfile
     file_writer(filename_out, result)
 
 

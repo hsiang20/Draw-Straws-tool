@@ -5,7 +5,7 @@ The project is for tabletennis school team of National Taiwan University.
 It can help arranging the schedules of the contests, given the data of the players.  
 
 ## Usage
-    $ python src/main.py [INPUTFILE_NAME] [OUTPUTFILE_NAME]  
+    $ python src/main.py [-d DEPARTMENT] [-t TTST] [-p PLAYERS_IN_ONE_GROUP] [-o PLAYERS_IN_ONE_GROUP_OTHERWISE] INPUTFILE_NAME OUTPUTFILE_NAME
 **Note that the input file should be a .csv file**.  
 
 ## File Format
