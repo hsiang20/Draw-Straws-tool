@@ -31,10 +31,16 @@ parser.add_argument("-p", "--players_per_group", help="Players per group", defau
 parser.add_argument("-o", "--players_per_group_other", help="Players per group (if remained)", default=4)
 args = parser.parse_args()
 
-DEPARTMENT = args.department
-TTST = args.ttst
-PLAYERS_IN_ONE_GROUP = args.players_per_group
-PLAYERS_IN_ONE_GROUP_OTHERWISE = args.players_per_group_other
+if (args.department == True):
+    DEPARTMENT = True
+else: 
+    DEPARTMENT = False
+if (args.ttst == True): 
+    TTST = True
+else:
+    TTST = False
+PLAYERS_IN_ONE_GROUP = int(args.players_per_group)
+PLAYERS_IN_ONE_GROUP_OTHERWISE = int(args.players_per_group_other)
 
 
 if __name__ == "__main__":
