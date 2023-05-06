@@ -120,7 +120,10 @@ class Arranger:
                     else:
                         for i in range(self.groups):
                             if player in self.result[i]:
-                                remain_group.remove(i)
+                                try:
+                                    remain_group.remove(i)
+                                except: 
+                                    pass
                                 break
 
         else:
