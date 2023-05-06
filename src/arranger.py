@@ -106,6 +106,12 @@ class Arranger:
             for department in self.department_list:
                 remain_group = [i for i in range(self.groups)]
                 for player in self.department_list[department]:
+                    if self.data[player] not in data_old:
+                        for i in range(self.groups):
+                            if player in self.result[i]:
+                                remain_group.remove(i)
+                                break
+                for player in self.department_list[department]:
                     if self.data[player] in data_old:
                         while True:
                             if len(remain_group) == 0:
@@ -117,14 +123,6 @@ class Arranger:
                                 break
                             else:
                                 continue
-                    else:
-                        for i in range(self.groups):
-                            if player in self.result[i]:
-                                try:
-                                    remain_group.remove(i)
-                                except: 
-                                    pass
-                                break
 
         else:
             for player in range(len(self.data)):
