@@ -1,8 +1,8 @@
 # Draw-Straws Tool (Random Picker)
 
 ## Introduction
-The project is for tabletennis school team of National Taiwan University.  
-It can help arranging the schedules of the contests, given the data of the players.  
+The project is designed for the table tennis school team of National Taiwan University.  
+It can help arrange the schedules of the contests, given the data of the players.  
 
 ## Usage
     $ python src/main.py [-d DEPARTMENT] [-t TTST] [-p PLAYERS_IN_ONE_GROUP] [-o PLAYERS_IN_ONE_GROUP_OTHERWISE] INPUTFILE_NAME OUTPUTFILE_NAME
@@ -37,13 +37,13 @@ If the player is in TTST, the third column should be Yes (or any other string).
 > 園藝一,高斯  
 
 ## Variables
-* DEPARTMENT: If True, the players of the same department would be seperated to different groups. Default True.
-* TTST: If True, the players of the tabletennis school team would be seperated to different groups. Default True.
+* DEPARTMENT: If True, the players of the same department would be separated into different groups. Default True.
+* TTST: If True, the players of the table tennis school team would be separated into different groups. Default True.
 * PLAYERS_IN_ONE_GROUP: The number of players in one group. Default 3.
-* PLAYERS_IN_ONE_GROUP_OTHERWISE: If the remainder is not 0, the number of the remain players in one group. Default 4.
+* PLAYERS_IN_ONE_GROUP_OTHERWISE: If the remainder is not 0, the number of the remaining players in one group. Default 4.
 > **The difference of these two variables must be 1.**  
 > For example,   
-> If number of players is 32,   
+> If the number of players is 32,   
 > PLAYERS_IN_ONE_GROUP = 3  
 > PLAYERS_IN_ONE_GROUP_OTHERWISE = 4  
 > Then there will be 8 groups containing 3 players and 2 groups containing 4 players.  
